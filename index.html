@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="lemartinezm@unah.hn">
+  <meta name="description" content="Tarea #1 BDI PAC III - 2020">
+  <title>Tarea #1</title>
+</head>
+
+<body>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="add"> Agregar <br>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="delete"> Eliminar <br>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="modify"> Modificar <br>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="previous"> Anterior <br>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="next"> Siguiente <br>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="first"> Primero <br>
+  <input type="radio" onchange="isSelected(this);" name="unchecked" id="last"> Ultimo <br>
+  <input style="padding: 1px;" type="text" id="userContent" onkeyup="setData(this);" placeholder="Texto"><br>
+  <button id="accept" onclick="accept();">Aceptar</button>
+  <button id="accept" onclick="clearInput();">Limpiar</button>
+  <script src="IDBManager.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
