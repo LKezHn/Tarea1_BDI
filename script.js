@@ -74,14 +74,12 @@ var accept = () => {
     IDBM.getNext(data)
     setTimeout( () =>{
       setInputInfo(data.note)
-      //console.log(data)
     },50)
   }else
   if(selection == "previous"){
     IDBM.getPrevious(data)
     setTimeout( () =>{
       setInputInfo(data.note)
-      //console.log(data)
     },50)
   }
   return false;
@@ -91,6 +89,7 @@ var accept = () => {
  * Funcion encargada de limpiar el input dinde se ingresa el texto a guardar
  * @author lemartinezm@unah.hn 
  * @version 1.0.0
+ * @date 2020/11/26
  */
 var clearInput = () => {
   document.getElementById("userContent").value = "";
